@@ -47,6 +47,7 @@ dependencies {
     implementation "androidx.annotation:annotation:$annotation_version"
 
     implementation 'androidx.core:core-ktx:1.10.1'
+    //android support
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "com.google.android.material:material:$material_version"
 //    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -54,6 +55,19 @@ dependencies {
     // dagger
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
+
+    // retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+
+    // JSON Parsing
+    implementation "com.google.code.gson:gson:$gson_version"
+    implementation "com.squareup.retrofit2:converter-gson:$converter_gson_version"
+
+    // rxjava2
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    implementation 'com.amitshekhar.android:rx2-android-networking:1.0.2'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
